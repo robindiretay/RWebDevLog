@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Robin's Dev Log</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    body,
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+
+    /* Rest of your CSS styles */
+
+    .rainbow-text {
+      background-image: linear-gradient(45deg, #f3d1f3, #de9ded, #c97de8, #b356e2, #9a2eda, #8209d1, #6a00c9);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      animation: rainbow 4s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .dropdown {
+      margin-top: 20px;
+    }
+
+    .dropdown-content {
+      display: none;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .collage {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .collage img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 5px;
+    }
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Previous Repl.its</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="https://replit.com/@CodeCommunity2/wk01-CA-MakeARecipe">Repl.it 1</a></li>
+      <li><a href="https://replit.com/@CodeCommunity2/wk02-semantic-exercise">Repl.it 2</a></li>
+      <li><a href="https://replit.com/@CodeCommunity2/wk02-css-id-class">Repl.it 3</a></li>
+      <li><a href="https://replit.com/@CodeCommunity2/wk02-css-id-class-1">Repl.it 4</a></li>
+    </ul>
+  </nav>
+
+  <div class="dropdown" id="dropdown">
+      <h2>Hover to reveal the article</h2>
+    </a>
+    <div class="dropdown-content">
+      <article>
+        <div class="collage">
+          <img src="https://cdn.discordapp.com/attachments/655810830381744147/1167459123743440916/cat-stoned.gif?ex=654e3409&is=653bbf09&hm=307985f2ed9acdede7387d1a&" alt="blehhh :3">
+          <img src="https://cdn.discordapp.com/attachments/655810830381744147/1167490031351504978/otter-otter-aty.gif?ex=654e50d2&is=653bdbd2&hm=98552a23d9495396f79e0dfd&" alt="omgg otter! :0">
+          <img src="https://cdn.discordapp.com/attachments/655810830381744147/1167490236696240198/daladada-cat.gif?ex=654e5103&is=653bdc03&hm=9e4280d0f1459313121764bc&" alt="aaaaaa!!">
+          <img src="https://cdn.discordapp.com/attachments/655810830381744147/1167490813589196921/saminzo-turning-his-ears.gif?ex=654e518c&is=653bdc8c&hm=b56c931a633bd567bd6af0a4&" alt="activating airplane ears">
+        </div>
+        <p>Have <span class="rainbow-text">silly</span> creatures :3</p>
+      </article>
+    </div>
+  </div>
+
+  <footer>By Robin, duh. Made with Replit.</footer>
+</body>
+
+</html>
